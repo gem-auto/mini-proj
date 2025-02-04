@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem Auto</title>
+    <link rel="icon" href="/logo.png" type="image/icon">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="/image.png" alt="">
+                </div>
+                <div class="navigate">
+                    <a href="#">Home</a>
+                    <a href="#">Services</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">About Us</a>
+                </div>
+            </div>
+            <div class="front-text" id="front-text">
+
+            <h1 id="front-text-h1">Gem Auto</h1>
+            <h4 id="front-text-h4">Where Excellence Meets the Road. Drive with Confidence</h4>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-main">
+                <div class="footer-sub">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!--Footer
+
+About Gem Auto
+Gem Auto is your trusted partner for top-quality automotive services and solutions. We specialize in vehicle repairs, maintenance, and customization, providing outstanding customer service every time.
+
+-->
+
+
+
+<!--The thing display from above-->
+<style>
+    .front-text{
+        color: #fff;
+        position: absolute;
+        top: 0%;
+        left: 25%;
+        font-family: 'Iceland',serif;
+        transition: 1s all ease;
+        opacity: 0;
+    }
+    h1{
+        font-size: 70px;
+    }
+    h4{
+        font-size: 30px;
+        opacity: 0;
+        transition: 0.8s all ease;
+    }
+
+</style>
+
+<script>
+    const ft = document.getElementById("front-text");
+    const ft_h1 = document.getElementById("front-text-h1");
+    const ft_h4 = document.getElementById("front-text-h4");
+    window.addEventListener('load',function(){
+        ft.style.top='25%';
+        ft.style.opacity=1;
+        setInterval(display_h4,1000);
+        function display_h4(){
+            ft_h4.style.opacity=1;
+        }
+    });
+</script>
+<!--navbar-->
+<style>
+    *{
+        overflow-x: hidden;
+        margin: 0px;
+    }
+    html{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container .logo img{
+        width: 120px;
+    }
+    .nav{
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("product-1.jpg");
+        height: 100vh;
+        background-position: center;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        justify-content: space-between;
+        height: auto;
+        border-bottom: 1px soldi #ccc;
+    }
+    .navbar > div{
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar .navigate a{
+        text-decoration: none;
+        color: #fff;
+        padding:15px 20px;
+        transition: 0.4s all ease;
+        border-radius: 7px;
+        height: 100%;
+        width: 100px;
+        text-align: center;
+    }
+    .navbar .navigate a:hover{
+        color: rgb(255, 102, 0);
+        background: #383838;
+    }
+
+
+    
+</style>
